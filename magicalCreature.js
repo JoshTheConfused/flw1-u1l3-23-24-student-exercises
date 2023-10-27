@@ -9,14 +9,7 @@ let creatureDescription1 = "A Giant Spider which can fire its web to immobilize 
 // 3. Do you believe that this creature is friendly to humans? 
 // Declare a variable named 'isFriendly' and assign it a boolean value.
 let isFriendly1 = true;
-
-let isFriendly1String;
-if (isFriendly1) {
-  isFriendly1String = "Yes";
-}
-else {
-  isFriendly1String = "No";
-}
+let isFriendly1String = isFriendly1 ? "Yes" : "No";
 
 // 4. The magical zoo has an age restriction! Declare a variable named 'visitorAge' and assign it a random age between 1 and 60.
 // Hint: Use Math.floor() to round a number up.
@@ -28,14 +21,7 @@ let visitorAge = Math.floor(Math.random() * 60 + 1);
 // if the visitorAge variable is greater than 15.
 // Hint: use this resource if you need support: https://www.w3schools.com/js/js_booleans.asp 
 let canVisit1 = visitorAge > 15;
-
-let canVisit1String;
-if (canVisit1) {
-  canVisit1String = "Yes";
-}
-else {
-  canVisit1String = "No";
-}
+let canVisit1String = canVisit1 ? "Yes" : "No";
 
 // 6. Combine all the information into a summary.
 // Declare a variable named 'zooSummary' and combine all the above information using concatenation.
@@ -52,59 +38,44 @@ let zooSummary1 = "Name: " + creatureName1 + ".\nDescription: " + creatureDescri
 // 9. Print the 'allZooSummaries' to see the details of all the creatures in the magical zoo.
 
 //All info for creature #2
-let creatureName2 = "";
+let creatureName2 = "Gremlin";
 
-let creatureDescription2 = "";
+let creatureDescription2 = "An impish creature with a knack for playing rather cruel tricks on humans. NOT to be trusted under any circumstances, and NEVER to be left unattended around the easily guiled.";
 
-let isFriendly2 = true;
+let isFriendly2 = false;
+let isFriendly2String = isFriendly2 ? "Yes" : "No";
 
-let isFriendly2String;
-if (isFriendly2) {
-  isFriendly2String = "Yes";
-}
-else {
-  isFriendly2String = "No";
-}
-
-let canVisit2 = visitorAge > 0;
-
-let canVisit2String;
-if (canVisit2) {
-  canVisit2String = "Yes";
-}
-else {
-  canVisit2String = "No";
-}
+let canVisit2 = visitorAge > 25;
+let canVisit2String = canVisit2 ? "Yes" : "No";
 
 let zooSummary2 = "Name: " + creatureName2 + ".\nDescription: " + creatureDescription2 + "\nHuman Friendly? " + isFriendly2String + ".\nIs the Visitor Allowed? " + canVisit2String + ".";
 
 //All info for creature #3
-let creatureName3 = "";
+let creatureName3 = "Angel";
 
-let creatureDescription3 = "";
+let creatureDescription3 = "A very fragile creature. While on Earth, they can pose no danger to humans, though even slight contact between one and a person may prove fatal for the angel. All actions done unto one will be remembered upon the doer's death.";
 
 let isFriendly3 = true;
+let isFriendly3String = isFriendly3 ? "Yes" : "No";
 
-let isFriendly3String;
-if (isFriendly3) {
-  isFriendly3String = "Yes";
-}
-else {
-  isFriendly3String = "No";
-}
-
-let canVisit3 = visitorAge > 0;
-
-let canVisit3String;
-if (canVisit3) {
-  canVisit3String = "Yes";
-}
-else {
-  canVisit3String = "No";
-}
+let canVisit3 = visitorAge > 18;
+let canVisit3String = canVisit3 ? "Yes" : "No";
 
 let zooSummary3 = "Name: " + creatureName3 + ".\nDescription: " + creatureDescription3 + "\nHuman Friendly? " + isFriendly3String + ".\nIs the Visitor Allowed? " + canVisit3String + ".";
 
-let allZooSummaries = "Creature 1:\n" + zooSummary1 + "\n\nCreature 2:\n" + zooSummary2 + "\n\nCreature 3:\n" + zooSummary3;
-  
+//All info for creature #4
+let creatureName4 = "Fuzzy Wuzzy";
+
+let creatureDescription4 = "A warm and playful ball of fur. Essentially harmless, as it has been bred for a long time for its fur and meat, though its great size may be a risk for very small children.";
+
+let isFriendly4 = true;
+let isFriendly4String = isFriendly4 ? "Yes" : "No";
+
+let canVisit4 = visitorAge > 5;
+let canVisit4String = canVisit4 ? "Yes" : "No";
+
+let zooSummary4 = "Name: " + creatureName4 + ".\nDescription: " + creatureDescription4 + "\nHuman Friendly? " + isFriendly4String + ".\nIs the Visitor Allowed? " + canVisit4String + ".";
+
+//Creates and prints final message
+let allZooSummaries = "Creature 1:\n" + zooSummary1 + "\n\nCreature 2:\n" + zooSummary2 + "\n\nCreature 3:\n" + zooSummary3 + "\n\nCreature 4:\n" + zooSummary4;
 console.log("Visitor Age: " + visitorAge + ".\n\n" + allZooSummaries);
